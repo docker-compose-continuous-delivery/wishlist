@@ -3,7 +3,7 @@ services:
     image: charmcli/wishlist:latest
     container_name: wishlist
     ports:
-      - "2222:22"
+      - "22:22"
     volumes:
       - ./wishlist:/.wishlist
       - ./cache:/root/.cache
