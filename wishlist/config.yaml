@@ -30,7 +30,7 @@ endpoints:
 
 # Users to allow access to the list
 users:
-    name: charm
+  - name: charm
     public-keys:
       - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPspfyaUsaq6jiwQ5mjz4d6Zfd30B7VUOvzqllV0UaFo ozeliurs@gmail.com
       - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPutUy6DkcaM3pP/lcCWdsuNE9czLHJQPF3FrZx/KKUr appad@LAPTOP-V040VGK2
