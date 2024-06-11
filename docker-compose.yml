@@ -7,3 +7,4 @@ services:
     volumes:
       - ./wishlist:/.wishlist
       - ./cache:/root/.cache
+    tty: true
