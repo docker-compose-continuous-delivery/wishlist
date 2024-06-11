@@ -1,5 +1,3 @@
-version: "3.9"
-
 services:
   wishlist:
     image: charmcli/wishlist:latest
@@ -8,3 +6,4 @@ services:
       - "2222:22"
     volumes:
       - ./wishlist:/.wishlist
+      - ./cache:/root/.cache
