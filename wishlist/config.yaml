@@ -15,6 +15,12 @@ endpoints:
     user: debian
     forward_agent: true
 
+  - name: Chalk
+    address: 192.168.1.28:22
+    description: "Bastion Server"
+    user: debian
+    forward_agent: true
+
   - name: Gypsum
     address: 192.168.1.119:22
     description: "Frontal Server"
