@@ -1,0 +1,46 @@
+listen: 0.0.0.0
+port: 22
+
+# Endpoints to list in the UI.
+endpoints:
+  - name: Adakite
+    address: 192.168.1.134:22
+    description: "Master Monitoring Server"
+    user: debian
+    forward_agent: true
+
+  - name: Basalt
+    address: 192.168.1.59:22
+    description: "Media Server"
+    user: debian
+    forward_agent: true
+
+  - name: Gypsum
+    address: 192.168.1.119:22
+    description: "Frontal Server"
+    user: debian
+    forward_agent: true
+
+
+# Users to allow access to the list
+users:
+    name: charm
+    public-keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPspfyaUsaq6jiwQ5mjz4d6Zfd30B7VUOvzqllV0UaFo ozeliurs@gmail.com
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPutUy6DkcaM3pP/lcCWdsuNE9czLHJQPF3FrZx/KKUr appad@LAPTOP-V040VGK2
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPoGjjQkOBXDqWS7Sx0cFe+rks6dYkVVt+DgH5Ze0FRj tombe@LAPTOP-O2I1684M
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICacN1gCNo4bsV9WsZ84ZQQvfs+AfcvYBWzTWhJwqHnJ raphaelanjou@MacBook-Pro-Raphael-Anjou.local
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFQ4dwdR5kG7RApFSuqiy11IoRG0pECnMLbiLLfttpwJ beelink
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMFGv9d1rW0kmJUbkcJQv4cYTtU2+OJFLTa4vOuApu6X ekter@here
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINUg9AdsjqjkpC7351dDTS/9om3nLP2AiGjCI5iQyRt6 ubuntu@Inspiron-Axel
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMhNWfTY2RSJHPRBxtujUnMjXPnSEk9V/gBVpQJiE3ho ekter@now
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFwZs/+WW7ka/AYZMsMnVJSIQ7QrgqSCIwh8MQFjkhp0 dbana@brahim
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPjAjspbkiL1tfGJUElIGvdqokY90LASagdaHEORnTlG ubuntu@DESKTOP-47I52G7
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC/gCHZ9ooP7gI75eHUutMwxzLTTNttZ+XpybB9scMH991wMqQpDrY/IXtI4A5RgcJxUucKIfK1A8WyTF7xU3EZwD26L8SV9xr+l4lpfWPTEliS75+Jt9ytnnsOCXzonH+dNKa5XTCb+X0qUcZHwvn26SsE1pOjEWlk0z2DS+rXBY0NdPj5xaXMfhksTfIMr0HN3sCsdzORFo0vfWYeibjk2xm5/6UXocdluuXjP8ZoT03BW9MCkLjxvQypw5Wfpow0F08YOCjH5GQ6Kf1caie0epPLOYUcDhaBMnCjrZGzdUILggg0q043B+ykLFKvpBBM62gXIMjU6GWDeT3uvkXd main@Yvanns-MacBook-Air.local
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCZPqMOtjG4TN7OGFP++rTDyYAQk6eI47jTBfNAR1Tae3wvd4gSNmLE43Dca2OSmeNOzd7gjslNhLlFtYcUfDZcGrxjwVsZSSdfy0R0z9TUUthbkKHtsBYpQkSf+UKRLjRuomyvpXes7KmG1XJTiCAuYtBYKmduJ+XDySYMKwLLUaUDgkQxzWSpnv0u2KTSFq7IcE0Ar3Oz+J9e/b89IVD5ymT0ev7bhHzTkiTz9jGi3p/zs7svBRXR4UXJfEkUBHNKcbh95fu5Sg+SLquI7gawExdZNgd86MZFw7OVfa3uQfr/xNF+T/QyS4fcbG7ysgdKLVINU/SeXCHKNB0sPWqDbHGM61lFuOCdnE3dXzdoifrQRDYXutN77wCgSjmFDXsecI9+Hctt8XCpzu/YiUIZ/N5PNF00hHXYR7ub/doDjdy8iEBkMU1WG48heCv3LKzx08ab23dGVuosRBWEsXuKhNTxSGIUVpcIo4warfLJWwXInNe58XAiyDKPoPUUye8= melanie@melanie-XPS-9315
+
+# Setup the /metrics prometheus endpoint.
+metrics:
+  enabled: false
+  name: wishlist
+  address: 0.0.0.0:9223
