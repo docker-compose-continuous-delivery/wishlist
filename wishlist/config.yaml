@@ -69,7 +69,11 @@ endpoints:
     user: debian
     forward_agent: true
 
-
+  - name: Shared SDN VM
+    address: 192.168.1.29:22
+    description: "Virtual Machine for SDN for Shared"
+    user: debian
+    forward_agent: true
 
 
 # Users to allow access to the list
