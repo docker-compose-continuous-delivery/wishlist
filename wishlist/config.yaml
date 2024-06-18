@@ -24,7 +24,7 @@ endpoints:
   - name: Gypsum
     address: 192.168.1.119:22
     description: "Frontal Server"
-    user: debian
+    user: ozeliurs
     forward_agent: true
 
   - name: Node Apoorva 2
