@@ -27,6 +27,12 @@ endpoints:
     user: ozeliurs
     forward_agent: true
 
+  - name: Tuff
+    address: 192.168.1.181:22
+    description: "Radicle Seed Node"
+    user: debian
+    forward_agent: true
+
   - name: Node Apoorva 2
     address: 192.168.1.169:22
     description: "Kubernetes Node"
