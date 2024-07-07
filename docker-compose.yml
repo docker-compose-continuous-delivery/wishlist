@@ -2,6 +2,7 @@ services:
   wishlist:
     image: charmcli/wishlist:latest
     container_name: wishlist
+    restart: unless-stopped
     ports:
       - "22:22"
     volumes:
