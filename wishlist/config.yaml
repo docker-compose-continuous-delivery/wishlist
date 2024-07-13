@@ -69,6 +69,12 @@ endpoints:
     user: debian
     forward_agent: true
 
+  - name: Sheepit Worker 01
+    address: 192.168.1.7:22
+    description: "Sheepit Worker"
+    user: debian
+    forward_agent: true
+
   - name: Melanie SDN VM
     address: 192.168.1.68:22
     description: "Virtual Machine for SDN for Melanie"
