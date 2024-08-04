@@ -30,7 +30,7 @@ endpoints:
   - name: Latite
     address: 192.168.1.187:22
     description: "Security Server"
-    user: debian
+    user: ubuntu
     forward_agent: true
 
   - name: Tuff
