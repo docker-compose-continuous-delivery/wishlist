@@ -10,9 +10,9 @@ endpoints:
     forward_agent: true
 
   - name: Basalt
-    address: 192.168.1.59:22
+    address: 192.168.1.151:22
     description: "Media Server"
-    user: ozeliurs
+    user: debian
     forward_agent: true
 
   - name: Chalk
