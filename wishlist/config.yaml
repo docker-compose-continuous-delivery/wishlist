@@ -21,21 +21,15 @@ endpoints:
     user: debian
     forward_agent: true
 
-  - name: Gypsum
-    address: 192.168.1.119:22
-    description: "Frontal Server"
-    user: ozeliurs
-    forward_agent: true
-
   - name: Latite
     address: 192.168.1.187:22
     description: "Security Server"
     user: ubuntu
     forward_agent: true
 
-  - name: Tuff
-    address: 192.168.1.181:22
-    description: "Radicle Seed Node"
+  - name: Quartz
+    address: 192.168.1.180:22
+    description: "Self Hosted Cloud"
     user: debian
     forward_agent: true
 
@@ -74,31 +68,6 @@ endpoints:
     description: "Virtual Machine for Development for Yvann"
     user: debian
     forward_agent: true
-
-  - name: Sheepit Worker 01
-    address: 192.168.1.7:22
-    description: "Sheepit Worker"
-    user: debian
-    forward_agent: true
-
-  - name: Melanie SDN VM
-    address: 192.168.1.68:22
-    description: "Virtual Machine for SDN for Melanie"
-    user: debian
-    forward_agent: true
-
-  - name: Maxime SDN VM
-    address: 192.168.1.127:22
-    description: "Virtual Machine for SDN for Maxime"
-    user: debian
-    forward_agent: true
-
-  - name: Shared SDN VM
-    address: 192.168.1.29:22
-    description: "Virtual Machine for SDN for Shared"
-    user: debian
-    forward_agent: true
-
 
 # Users to allow access to the list
 users:
