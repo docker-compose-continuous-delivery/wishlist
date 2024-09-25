@@ -40,7 +40,7 @@ endpoints:
     forward_agent: true
 
   - name: Node Apoorva 2
-    address: 192.168.1.169:22
+    address: 192.168.1.176:22
     description: "Kubernetes Node"
     user: user
     forward_agent: true
